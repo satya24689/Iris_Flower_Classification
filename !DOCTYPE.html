@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sophisticated Webpage</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Cursive, sans-serif;
+    background-color: #f5f5f5;
+  }
+
+  .header {
+    background-image: url('https://i.pinimg.com/originals/69/f3/0a/69f30a9203334871de8306ff6c477c59.gif'); /* Add your GIF URL */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .header h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+
+  .container {
+    position: relative;
+    max-width: 1200px;
+    margin: -60px auto 20px;
+    padding: 190px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1;
+    background-image: url('https://i.pinimg.com/originals/28/d0/71/28d07105a480b923ebf544f90131e0d2.gif');
+    background-size: cover;
+    background-position: center;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .option {
+    background-color: #76448A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    flex-basis: calc(25% - 40px);
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+  }
+
+  .option:hover {
+    background-color: #5E2E78;
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>IRIS FLOWER CLASSIFICATION</h1>
+  </div>
+
+  <div class="container">
+    <div class="title">
+      <h2>Explore Options</h2>
+    </div>
+    <div class="options">
+      <div class="option" id="option1">Logistic Regression</div>
+      <div class="option" id="option2">Decision Tree</div>
+      <div class="option" id="option3">Artificial Neural Network</div>
+    </div>
+  </div>
+
+  <script>
+    // Replace these URLs with the actual links you want to open
+    const links = {
+      option1: "https://colab.research.google.com/drive/1KDUyq368F93R5G2QyMHjey-SMmtsbQQL?usp=sharing",
+      option2: "https://colab.research.google.com/drive/1iJduICYXoNjLg-cOCy3JW4ZR5Nl14yxA?usp=sharing",
+      option3: "https://colab.research.google.com/drive/1uJcg0w1ug-zyAOEZfbYTljDwRwCKhpp6?usp=sharing",
+    };
+
+    // Add click event listeners to each option
+    document.getElementById("option1").addEventListener("click", function() {
+      window.open(links.option1, "_blank");
+    });
+
+    document.getElementById("option2").addEventListener("click", function() {
+      window.open(links.option2, "_blank");
+    });
+
+    document.getElementById("option3").addEventListener("click", function() {
+      window.open(links.option3, "_blank");
+    });
+  </script>
+</body>
+</html>
