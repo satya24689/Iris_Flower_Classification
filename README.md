@@ -24,7 +24,7 @@ You can use this project as a learning resource for machine learning and classif
 
 ## Results
 
-The model achieves [X% accuracy] on the test dataset, demonstrating its ability to classify Iris flowers accurately.
+The model achieves 90% on the test dataset, demonstrating its ability to classify Iris flowers accurately.
 
 ## Contributing
 
